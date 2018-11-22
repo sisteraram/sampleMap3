@@ -29,4 +29,10 @@ public class DataController {
 		return new ResponseEntity<>(mapper.getList(), HttpStatus.OK);
 	}
 	
+	@GetMapping(value = "/dataEx2", produces= {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE})
+	public ResponseEntity<List<StoreVO>> mapEx2() {
+		log.info("data.......");
+		return new ResponseEntity<>(mapper.getList2(), HttpStatus.OK);
+	}
+	
 }

@@ -10,4 +10,8 @@ public interface SampleMapper {
 	@Select("select * from tbl_mapex")
 	public List<StoreVO> getList();
 
+	
+	@Select("select * from tbl_mapex2")
+	public List<StoreVO> getList2();
+	
 }

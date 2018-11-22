@@ -12,5 +12,9 @@ public class MapController {
 	public void mapEx()	{
 		
 	}
+	@GetMapping("/mapExOld")
+	public void mapExOld()	{
+		
+	}
 
 }
